@@ -16,12 +16,11 @@ body {
   padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    /* color-scheme: dark; */
+/* Tailwind components */
+
+@layer components{
+  /* Wrapper Container */
+  .container{
+@apply !max-w-screen-2xl mx-auto px-5
   }
-  /* body {
-    color: white;
-    background: black;
-  } */
 }
