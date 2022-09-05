@@ -4,6 +4,6 @@
       "javascript": "javascriptreact"
     },
     "emmet.triggerExpansionOnTab": true,
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "on"
   }
   

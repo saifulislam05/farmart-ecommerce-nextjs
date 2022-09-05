@@ -2,7 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
-import Search from '../components/shared/Search';
+import Search from '../components/Search';
+
 
 const Header = () => {
     return (
