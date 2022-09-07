@@ -57,4 +57,10 @@ p{
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+
+
+  .scrolout::-webkit-scrollbar{
+    display:none
+  }
 }

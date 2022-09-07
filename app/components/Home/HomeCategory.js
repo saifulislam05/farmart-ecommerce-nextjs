@@ -49,7 +49,7 @@ const HomeCategory = () => {
                 />
 
                 {/* Category Slider  */}
-                <div className="flex items-center gap-7 overflow-x-auto mt-5 pt-5 pb-14 pl-2 no-scrollbar">
+                <div className="flex items-center gap-7 overflow-x-auto mt-5 pt-5 pl-2 no-scrollbar">
                     {CATEGORY.map((item, index) => (
                         <CategoryCard
                             key={index}
