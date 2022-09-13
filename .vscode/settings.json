@@ -3,7 +3,6 @@
     "emmet.includeLanguages": {
       "javascript": "javascriptreact"
     },
-    "emmet.triggerExpansionOnTab": true,
-    "editor.wordWrap": "on"
+    
   }
   
