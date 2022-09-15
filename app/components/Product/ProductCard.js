@@ -3,19 +3,18 @@ import Image from "next/image"
 const ProductCard = ({ product }) => {
     const { name, image, price, weight, oldPrice } = product
     const offCalc = () => {
-        const off =((oldPrice-price) / oldPrice) *100
+        const off = ((oldPrice - price) / oldPrice) * 100
         return Math.round(off)
     }
     return (
         <div className='product-card'>
 
             {oldPrice && (
-               <span className="bg-orange text-white text-xs px-2 py-1 rounded-md absolute top-5 left-5 z-10">
-                {offCalc()}% OFF
-            </span> 
+                <span className="bg-orange text-white text-xs px-2 py-1 rounded-md absolute top-5 left-5 z-10">
+                    {offCalc()}% OFF
+                </span>
             )}
 
-            
             {/* Image  */}
             <Image
                 src={image}
@@ -37,11 +36,11 @@ const ProductCard = ({ product }) => {
                 {/* product rate */}
                 <div className="flex items-center gap-1">
 
-                    <span className= {`text-base font-extrabold ${oldPrice? 'text-orange': 'text-green'}`} >
+                    <span className={`text-base font-extrabold ${oldPrice ? 'text-orange' : 'text-green'}`} >
                         ${price}
                     </span>
-{oldPrice && (<span className="text-sm line-through text-gray-400">${oldPrice}</span>)}               
-                    
+                    {oldPrice && (<span className="text-sm line-through text-gray-400">${oldPrice}</span>)}
+
                 </div>
 
             </div>
