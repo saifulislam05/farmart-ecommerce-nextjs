@@ -30,9 +30,9 @@ const ProductCard = ({ product }) => {
                 <h3 className="text-lg font-semibold text truncate">{name}</h3>
 
                 {/* product contaty */}
-                <spa className="text-sm text-color">
+                <span className="text-sm text-color">
                     {weight}
-                </spa>
+                </span>
                 {/* product rate */}
                 <div className="flex items-center gap-1">
 

@@ -3,6 +3,7 @@ import HomeCategory from "../app/components/Home/HomeCategory";
 import HomeHero from "../app/components/Home/HomeHero";
 import HomePoster from "../app/components/Home/HomePoster";
 import TodaysDeals from "../app/components/Home/TodaysDeals";
+import Products from "./products";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <HomeCategory />
       <FeaturedBrands />
       <TodaysDeals />
-      <HomePoster/>
+      <HomePoster />
     </>
   )
 }
