@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const ProductCard = ({ product }) => {
     const { name, image, price, weight, oldPrice } = product
@@ -7,6 +8,7 @@ const ProductCard = ({ product }) => {
         return Math.round(off)
     }
     return (
+        <Link href={`/products`}>
         <div className='product-card'>
 
             {oldPrice && (
@@ -45,7 +47,8 @@ const ProductCard = ({ product }) => {
 
             </div>
 
-        </div>
+            </div>
+        </Link>
     )
 }
 
