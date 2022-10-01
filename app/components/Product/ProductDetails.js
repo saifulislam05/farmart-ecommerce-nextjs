@@ -15,13 +15,8 @@ const ProductDetails = ({ price = 30.23, oldPrice }) => {
 
                         {/* Details */}
                         <div className="lg:w-2/5 w-full px-5 md:pl-10 pl-0">
-                            <Breadcrumb
-                                items={[
-                                    { label: 'Home', href: '/' },
-                                    { label: 'Shop', href: '/product' },
-                                    { label: 'Naked Noodle Egg Noodles Singapore' },
-                                ]}
-                            />
+                            {/* crumbList  */}
+                            <Breadcrumb/>
                             <h4 className='md:text-xl text-base font-bold mb-2 text-orange mt-5'>MartFury</h4>
                             <h1 className="text-title md:text-3xl text-xl font-semibold mb-5">Naked Noodle Egg Noodles Singapore</h1>
                             <span className="text-color text-xs">⭐⭐⭐⭐⭐(1 customer review)</span>
