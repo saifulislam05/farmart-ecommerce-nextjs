@@ -1,3 +1,4 @@
+import CartAction from "../app/components/cart/CartAction"
 import CartTable from "../app/components/cart/CartTable"
 import Breadcrumb from "../app/components/shared/Breadcrumb"
 
@@ -14,7 +15,8 @@ const Cart = () => {
             <div className="p-5">
                 <div className="mx-auto max-w-5xl mt-10">
                     <h1 className="text-4xl text-center text-title font-bold mb-10 ">Cart</h1>
-                    <CartTable/>
+                    <CartTable />
+                    <CartAction/>
                 </div>
             </div>
         </main>

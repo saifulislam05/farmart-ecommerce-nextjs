@@ -1,4 +1,4 @@
-import React from "react";
+
 import Quantity from "../shared/Quantity";
 import { MdDelete } from "react-icons/md";
 
