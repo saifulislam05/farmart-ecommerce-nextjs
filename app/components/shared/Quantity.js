@@ -3,11 +3,11 @@ import React from 'react'
 const Quantity = () => {
     return (
         <div className="flex  border">
-            <button className="w-10  flex items-center bg-[#F5F5F5] justify-center">-</button>
+            <button className="w-8  flex items-center bg-[#F5F5F5] justify-center">-</button>
 
-            <div className='w-10  flex items-center justify-center'>1</div>
+            <div className='w-8  flex items-center justify-center'>1</div>
 
-            <button className="w-10  flex items-center bg-[#F5F5F5] justify-center">+</button>
+            <button className="w-8  flex items-center bg-[#F5F5F5] justify-center">+</button>
         </div>
     )
 }
