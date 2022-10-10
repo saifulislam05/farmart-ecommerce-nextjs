@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Button from "../shared/Button";
+
 const CartAction = () => {
   return (
     <div className=" py-8 border-t">
@@ -24,7 +26,7 @@ const CartAction = () => {
             <h2 className="text-xl font-bold">Subtotal</h2>
             <h2 className="text-xl font-bold">$ 200</h2>
           </div>
-          <div className="pb-5 border-b-space-y-3">
+          <div className="pb-5 border-b space-y-3">
             <span className="text-title">Shipping</span>
             <ul className="">
               <li className="">- Flat rate</li>
@@ -36,11 +38,14 @@ const CartAction = () => {
                   <div className="flex justify-between py-5">
                       <h2 className="text-xl font-bold">Subtotal</h2>
                       <h2 className="text-xl font-bold text-green">$200</h2>
-                  </div>
-                  <Button
+          </div>
+          <Link href="checkout">
+             <Button
                       title="Proceed to checkout"
-                      classname="w-full py-3"
+                      className="w-full py-3"
                   />
+          </Link>
+               
         </div>
       </div>
     </div>
