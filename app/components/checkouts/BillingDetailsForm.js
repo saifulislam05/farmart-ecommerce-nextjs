@@ -1,11 +1,40 @@
 import {AppTextArea, FormDropdown, FormInput } from "../shared/Form";
 
 const COUNTRIES = [
-        {title: "United States"},
-        {title: "United Kingdom"},
-        {title: "India"},
-        {title: "Others"},
-]
+  { title: "United States" },
+  { title: "United Kingdom" },
+  { title: "Canada" },
+  { title: "Australia" },
+  { title: "Bangladesh" },
+  { title: "France" },
+  { title: "Italy" },
+  { title: "Spain" },
+  { title: "Netherlands" },
+  { title: "Belgium" },
+  { title: "Austria" },
+  { title: "Switzerland" },
+  { title: "Sweden" },
+  { title: "Norway" },
+  { title: "Denmark" },
+  { title: "Finland" },
+  { title: "Ireland" },
+  { title: "New Zealand" },
+  { title: "Japan" },
+  { title: "China" },
+  { title: "Hong Kong" },
+  { title: "Singapore" },
+  { title: "India" },
+  { title: "Brazil" },
+  { title: "Mexico" },
+  { title: "Argentina" },
+  { title: "Chile" },
+  { title: "Colombia" },
+  { title: "Peru" },
+  { title: "Venezuela" },
+  { title: "South Africa" },
+  { title: "Egypt" },
+  { title: "Western" },
+];
         
 const BillingDetailsForm = () => {
 
