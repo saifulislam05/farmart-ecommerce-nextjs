@@ -1,7 +1,7 @@
-import React from 'react'
-import { AppForm } from '../shared/Form';
-import BillingInfo from './BillingInfo';
-import YourOrder from './YourOrder';
+import React from "react";
+import { AppForm } from "../shared/Form";
+import BillingInfo from "./BillingInfo";
+import YourOrder from "./YourOrder";
 import * as Yup from "yup";
 
 const validationSchema = Yup.object().shape({
@@ -19,43 +19,39 @@ const validationSchema = Yup.object().shape({
 });
 
 const CheckoutContent = () => {
-    const placeholder = (values) => {
-        console.log(values);
-      
-    }
+  const placeholder = (values) => {
+    console.log(values);
+  };
   return (
     <>
-          <div className="flex flex-wrap md:flex-nowrap">
-              <AppForm
-              
-        initialValues={{
-          first_name: "",
-          last_name: "",
-          company: "",
-          country: "",
-          address: "",
-          city: "",
-          state: "",
-          zip: "",
-          phone: "",
-          email: "",
-          note: "",
-        }}
-        onSubmit={placeholder}
-        validationSchema={validationSchema}
-      
-              >
-                   <div className="w-fulll md:w-[60%]">
-          <BillingInfo />
-        </div>
-        <div className="w-fulll md:w-[40%]">
-          <YourOrder placeOrder={placeholder} />
-        </div>
-              </AppForm>
-       
+      <div className="flex flex-wrap md:flex-nowrap">
+        <AppForm
+          initialValues={{
+            first_name: "",
+            last_name: "",
+            company: "",
+            country: "",
+            address: "",
+            city: "",
+            state: "",
+            zip: "",
+            phone: "",
+            email: "",
+            note: "",
+          }}
+          onSubmit={placeholder}
+          validationSchema={validationSchema}
+        >
+          <div className="w-full md:w-[60%]">
+            <BillingInfo />
+          </div>
+          <div className="w-full md:w-[40%]">
+            <YourOrder placeOrder={placeholder} />
+          </div>
+        </AppForm>
       </div>
     </>
   );
-}
+};
 
-export default CheckoutContent
+export default CheckoutContent;

@@ -1,4 +1,5 @@
-import {AppTextArea, FormDropdown, FormInput } from "../shared/Form";
+import React from "react";
+import { AppTextArea, FormDropdown, FormInput } from "../shared/Form";
 
 const COUNTRIES = [
   { title: "United States" },
@@ -35,39 +36,29 @@ const COUNTRIES = [
   { title: "Egypt" },
   { title: "Western" },
 ];
-        
+
 const BillingDetailsForm = () => {
-
-
   return (
-    <div>
-      <FormInput name="first_name" placeholder="First name"></FormInput>
-      <FormInput name="last_name" placeholder="Last name"></FormInput>
-      <FormInput
-        name="company"
-        placeholder="Company name (optional)"
-      ></FormInput>
-      <FormDropdown name="country" placeholder="Country name"
+    <div className="pr-4">
+      <FormInput name="first_name" placeholder="First name" />
+      <FormInput name="last_name" placeholder="Last name" />
+      <FormInput name="company" placeholder="Company name (optional)" />
+      <FormDropdown
+        name="country"
+        placeholder="Country / Region"
         items={COUNTRIES}
-    
-      >
-
-      </FormDropdown>
-      <FormInput name="address" placeholder="Street address"></FormInput>
-      <FormInput name="city" placeholder="Town / City"></FormInput>
-      <FormInput name="state" placeholder="State / Province"></FormInput>
-      <FormInput name="zip" placeholder="Zip / Postal code"></FormInput>
-      <FormInput name="phone" placeholder="Phone"></FormInput>
-      <FormInput
-        name="email"
-        type="email"
-        placeholder="Email address"
-      ></FormInput>
+      />
+      <FormInput name="address" placeholder="Street address" />
+      <FormInput name="city" placeholder="Town / City" />
+      <FormInput name="state" placeholder="State / Province" />
+      <FormInput name="zip" placeholder="ZIP / Postal code" />
+      <FormInput name="phone" placeholder="Phone" />
+      <FormInput name="email" placeholder="Email address" type="email" />
       <AppTextArea
         name="notes"
-        type="textarea"
         placeholder="Order notes (optional)"
-      ></AppTextArea>
+        type="textarea"
+      />
     </div>
   );
 };
