@@ -51,7 +51,7 @@ const [isLogin, setIsLogin] = React.useState(true)
               phone: "",
               email: "",
             }}
-            // onSubmit={placeholder}
+            onSubmit={handleLoginSignup}
             validationSchema={validationSchema}
           >
             <FormInput
@@ -64,7 +64,9 @@ const [isLogin, setIsLogin] = React.useState(true)
               placeholder="Password"
               type="password"
             ></FormInput>
-            <FormBtn title={isLogin ? "Login" : "Register"} />
+            <FormBtn
+              title={isLogin ? "Login" : "Register"}
+            />
           </AppForm>
 
           <div className="">

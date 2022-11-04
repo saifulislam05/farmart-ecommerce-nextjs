@@ -1,20 +1,16 @@
-
 import React from 'react'
-import Auth from '../../app/components/auth';
-import Breadcrumb from '../../app/components/shared/Breadcrumb';
+import Dashboard from '../../app/components/dashboard/Dashboard';
+import DashboardLayout from '../../app/layout/DashboardLayout';
 
 const MyAccount = () => {
     return (
       <main>
-        <div className="bg-[#F5F5F5] p-5">
-          <div className="mx-auto max-w-5xl">
-            <Breadcrumb />
-          </div>
-        </div>
+        <DashboardLayout>
+<Dashboard/>
+        </DashboardLayout>
+    
            
-            <div>
-                <Auth/>
-            </div>
+      
       </main>
     );
 }
