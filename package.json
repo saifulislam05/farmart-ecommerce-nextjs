@@ -13,10 +13,12 @@
     "@mantine/carousel": "^5.4.0",
     "@mantine/core": "^5.4.0",
     "@mantine/hooks": "^5.4.0",
+    "@reduxjs/toolkit": "^1.9.0",
     "@tailwindcss/typography": "^0.5.7",
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
     "embla-carousel-react": "^7.0.3",
+    "firebase": "^8.10.1",
     "formik": "^2.2.9",
     "markdown-draft-js": "^2.4.0",
     "multiselect-react-dropdown": "^2.0.25",
@@ -24,6 +26,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "yarn": "^1.22.19",
     "yup": "^0.32.11"
   },
   "devDependencies": {
